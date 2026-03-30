@@ -147,6 +147,81 @@ def apply_theme():
 
     /* Sidebar logo */
     [data-testid="stSidebar"] img { filter: invert(1) brightness(2); }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .stApp { padding: 0 !important; }
+        [data-testid="stSidebar"] { min-width: 200px !important; }
+
+        /* Stack metric cards vertically */
+        [data-testid="stHorizontalBlock"] {
+            flex-wrap: wrap !important;
+            gap: 8px !important;
+        }
+        [data-testid="stHorizontalBlock"] > div {
+            flex: 1 1 100% !important;
+            min-width: 0 !important;
+        }
+        [data-testid="stMetric"] {
+            padding: 10px 10px !important;
+            border-radius: 8px !important;
+        }
+        [data-testid="stMetricValue"] {
+            font-size: 16px !important;
+        }
+        [data-testid="stMetricLabel"] {
+            font-size: 10px !important;
+        }
+
+        /* Project cards */
+        .project-card {
+            padding: 14px !important;
+            border-radius: 10px !important;
+        }
+        .card-number { font-size: 24px !important; }
+        .card-project { font-size: 14px !important; }
+        .card-detail { font-size: 11px !important; }
+
+        /* Tables scroll horizontally */
+        [data-testid="stDataFrame"] {
+            overflow-x: auto !important;
+        }
+
+        /* Tabs smaller on mobile */
+        .stTabs [data-baseweb="tab"] {
+            padding: 6px 12px !important;
+            font-size: 12px !important;
+        }
+
+        /* Charts responsive */
+        .js-plotly-plot { width: 100% !important; }
+
+        /* Section headers */
+        .section-header {
+            font-size: 11px !important;
+            margin-bottom: 12px !important;
+            padding-bottom: 8px !important;
+        }
+
+        /* Risk rows */
+        .risk-row {
+            padding: 10px 12px !important;
+            flex-direction: column !important;
+            gap: 4px !important;
+        }
+        .risk-amount { font-size: 14px !important; }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+        [data-testid="stMetricValue"] {
+            font-size: 14px !important;
+        }
+        .card-number { font-size: 20px !important; }
+        h1 { font-size: 20px !important; }
+        h2 { font-size: 16px !important; }
+        h3 { font-size: 14px !important; }
+    }
 </style>
 """, unsafe_allow_html=True)
 
