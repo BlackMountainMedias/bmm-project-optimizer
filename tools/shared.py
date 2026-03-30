@@ -215,37 +215,6 @@ def apply_theme():
         .risk-amount { font-size: 14px !important; }
     }
 
-    /* Mobile: make sidebar toggle large and obvious */
-    @media (max-width: 768px) {
-        [data-testid="stHeader"] {
-            background: #111827 !important;
-            border-bottom: 2px solid #ff6b35 !important;
-            height: 50px !important;
-        }
-        /* Make the arrow/hamburger button big and tappable */
-        [data-testid="stSidebarCollapsedControl"] {
-            top: 4px !important;
-            left: 8px !important;
-        }
-        [data-testid="stSidebarCollapsedControl"] button,
-        [data-testid="stHeader"] button {
-            background: #ff6b35 !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 8px !important;
-            width: 44px !important;
-            height: 44px !important;
-            min-height: 44px !important;
-            padding: 0 !important;
-        }
-        [data-testid="stSidebarCollapsedControl"] button svg,
-        [data-testid="stHeader"] button svg {
-            fill: white !important;
-            stroke: white !important;
-            width: 24px !important;
-            height: 24px !important;
-        }
-    }
 
     /* Small phones */
     @media (max-width: 480px) {
