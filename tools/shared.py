@@ -212,6 +212,21 @@ def apply_theme():
         .risk-amount { font-size: 14px !important; }
     }
 
+    /* Mobile: make hamburger menu more visible */
+    @media (max-width: 768px) {
+        [data-testid="stHeader"] {
+            background: linear-gradient(135deg, #0a0f1a 0%, #111827 100%) !important;
+            border-bottom: 1px solid #1e293b !important;
+        }
+        /* Style the sidebar toggle button */
+        [data-testid="stHeader"] button {
+            color: #ff6b35 !important;
+            border: 1px solid #ff6b35 !important;
+            border-radius: 6px !important;
+            margin: 6px !important;
+        }
+    }
+
     /* Small phones */
     @media (max-width: 480px) {
         [data-testid="stMetricValue"] {
