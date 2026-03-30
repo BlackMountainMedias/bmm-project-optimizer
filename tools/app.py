@@ -31,38 +31,48 @@ if os.path.exists(LOGO_PATH):
     st.sidebar.markdown("")
 
 # ---------------------------------------------------------------------------
-# Mobile: make the built-in sidebar toggle always visible + styled
+# Mobile: inject JS to open sidebar on button click
 # ---------------------------------------------------------------------------
 st.markdown("""
 <style>
+    #bmm-menu-btn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999999;
+        background: #ff6b35;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 16px rgba(255,107,53,0.4);
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
     @media (max-width: 768px) {
-        /* Make Streamlit's own sidebar toggle bigger and always visible */
-        [data-testid="stSidebarCollapsedControl"] {
-            position: fixed !important;
-            bottom: 20px !important;
-            right: 20px !important;
-            top: auto !important;
-            left: auto !important;
-            z-index: 999999 !important;
-        }
-        [data-testid="stSidebarCollapsedControl"] button {
-            background: #ff6b35 !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 50% !important;
-            width: 56px !important;
-            height: 56px !important;
-            min-height: 56px !important;
-            box-shadow: 0 4px 16px rgba(255,107,53,0.4) !important;
-        }
-        [data-testid="stSidebarCollapsedControl"] button svg {
-            fill: white !important;
-            stroke: white !important;
-            width: 28px !important;
-            height: 28px !important;
-        }
+        #bmm-menu-btn { display: block; }
     }
 </style>
+<script>
+function bmmOpenSidebar() {
+    // Try all known Streamlit sidebar toggle selectors
+    var selectors = [
+        '[data-testid="stSidebarCollapsedControl"] button',
+        '[data-testid="collapsedControl"] button',
+        'button[kind="headerNoPadding"]',
+        '[data-testid="stHeader"] button'
+    ];
+    for (var i = 0; i < selectors.length; i++) {
+        var el = parent.document.querySelector(selectors[i]);
+        if (el) { el.click(); return; }
+    }
+}
+</script>
+<div id="bmm-menu-btn" ontouchstart="bmmOpenSidebar()" onclick="bmmOpenSidebar()">&#9776;</div>
 """, unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
