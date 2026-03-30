@@ -97,7 +97,7 @@ def apply_theme():
     }
 
     /* Hide streamlit branding */
-    #MainMenu, footer, [data-testid="stToolbar"] { display: none; }
+    #MainMenu, footer { display: none; }
 
     /* Custom card styles */
     .project-card {
