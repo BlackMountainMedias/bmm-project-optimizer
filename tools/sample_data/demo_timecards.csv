@@ -1,0 +1,51 @@
+project_name,worker_name,date,hours,phase,hourly_rate,overtime_hours,crew
+Maple Ridge Office Tower,Mike Torres,2026-03-17,8,Structural,65,0,Concrete Crew A
+Maple Ridge Office Tower,Mike Torres,2026-03-18,9,Structural,65,1,Concrete Crew A
+Maple Ridge Office Tower,Mike Torres,2026-03-19,10,Structural,65,2,Concrete Crew A
+Maple Ridge Office Tower,Mike Torres,2026-03-20,8,Structural,65,0,Concrete Crew A
+Maple Ridge Office Tower,Mike Torres,2026-03-21,8,Structural,65,0,Concrete Crew A
+Maple Ridge Office Tower,Sara Chen,2026-03-17,8,Structural,62,0,Concrete Crew A
+Maple Ridge Office Tower,Sara Chen,2026-03-18,8,Structural,62,0,Concrete Crew A
+Maple Ridge Office Tower,Sara Chen,2026-03-19,10,Structural,62,2,Concrete Crew A
+Maple Ridge Office Tower,Sara Chen,2026-03-20,8,Structural,62,0,Concrete Crew A
+Maple Ridge Office Tower,Sara Chen,2026-03-21,6,Structural,62,0,Concrete Crew A
+Maple Ridge Office Tower,Dan Reeves,2026-03-17,8,Mechanical,72,0,HVAC Crew
+Maple Ridge Office Tower,Dan Reeves,2026-03-18,8,Mechanical,72,0,HVAC Crew
+Maple Ridge Office Tower,Dan Reeves,2026-03-19,8,Mechanical,72,0,HVAC Crew
+Maple Ridge Office Tower,Dan Reeves,2026-03-20,10,Mechanical,72,2,HVAC Crew
+Maple Ridge Office Tower,Dan Reeves,2026-03-21,8,Mechanical,72,0,HVAC Crew
+Maple Ridge Office Tower,Lisa Park,2026-03-17,8,Electrical,68,0,Electrical Crew
+Maple Ridge Office Tower,Lisa Park,2026-03-18,8,Electrical,68,0,Electrical Crew
+Maple Ridge Office Tower,Lisa Park,2026-03-19,9,Electrical,68,1,Electrical Crew
+Maple Ridge Office Tower,Lisa Park,2026-03-20,8,Electrical,68,0,Electrical Crew
+Maple Ridge Office Tower,Lisa Park,2026-03-21,8,Electrical,68,0,Electrical Crew
+Northgate Industrial Park,Tom Bradley,2026-03-17,10,Structural,78,2,Steel Crew A
+Northgate Industrial Park,Tom Bradley,2026-03-18,10,Structural,78,2,Steel Crew A
+Northgate Industrial Park,Tom Bradley,2026-03-19,10,Structural,78,2,Steel Crew A
+Northgate Industrial Park,Tom Bradley,2026-03-20,10,Structural,78,2,Steel Crew A
+Northgate Industrial Park,Tom Bradley,2026-03-21,8,Structural,78,0,Steel Crew A
+Northgate Industrial Park,James Okafor,2026-03-17,10,Structural,75,2,Steel Crew A
+Northgate Industrial Park,James Okafor,2026-03-18,10,Structural,75,2,Steel Crew A
+Northgate Industrial Park,James Okafor,2026-03-19,9,Structural,75,1,Steel Crew A
+Northgate Industrial Park,James Okafor,2026-03-20,10,Structural,75,2,Steel Crew A
+Northgate Industrial Park,James Okafor,2026-03-21,8,Structural,75,0,Steel Crew A
+Northgate Industrial Park,Carlos Ruiz,2026-03-17,8,Mechanical,70,0,Piping Crew
+Northgate Industrial Park,Carlos Ruiz,2026-03-18,8,Mechanical,70,0,Piping Crew
+Northgate Industrial Park,Carlos Ruiz,2026-03-19,8,Mechanical,70,0,Piping Crew
+Northgate Industrial Park,Carlos Ruiz,2026-03-20,9,Mechanical,70,1,Piping Crew
+Northgate Industrial Park,Carlos Ruiz,2026-03-21,8,Mechanical,70,0,Piping Crew
+Northgate Industrial Park,Wei Zhang,2026-03-17,8,Electrical,68,0,Electrical Crew
+Northgate Industrial Park,Wei Zhang,2026-03-18,8,Electrical,68,0,Electrical Crew
+Northgate Industrial Park,Wei Zhang,2026-03-19,8,Electrical,68,0,Electrical Crew
+Northgate Industrial Park,Wei Zhang,2026-03-20,8,Electrical,68,0,Electrical Crew
+Northgate Industrial Park,Wei Zhang,2026-03-21,8,Electrical,68,0,Electrical Crew
+City Centre Parking Structure,Ryan Kowalski,2026-03-17,8,Structural,66,0,Forming Crew
+City Centre Parking Structure,Ryan Kowalski,2026-03-18,9,Structural,66,1,Forming Crew
+City Centre Parking Structure,Ryan Kowalski,2026-03-19,8,Structural,66,0,Forming Crew
+City Centre Parking Structure,Ryan Kowalski,2026-03-20,8,Structural,66,0,Forming Crew
+City Centre Parking Structure,Ryan Kowalski,2026-03-21,7,Structural,66,0,Forming Crew
+City Centre Parking Structure,Amy Tran,2026-03-17,8,Structural,64,0,Forming Crew
+City Centre Parking Structure,Amy Tran,2026-03-18,8,Structural,64,0,Forming Crew
+City Centre Parking Structure,Amy Tran,2026-03-19,8,Structural,64,0,Forming Crew
+City Centre Parking Structure,Amy Tran,2026-03-20,9,Structural,64,1,Forming Crew
+City Centre Parking Structure,Amy Tran,2026-03-21,8,Structural,64,0,Forming Crew

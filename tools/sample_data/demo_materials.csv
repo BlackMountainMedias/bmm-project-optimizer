@@ -1,0 +1,25 @@
+project_name,material,quantity,unit_cost,phase,vendor,order_date,delivery_date,status,total_cost
+Maple Ridge Office Tower,Ready-Mix Concrete (CY),480,185,Structural,Pacific Concrete,2026-01-10,2026-02-01,Delivered,88800
+Maple Ridge Office Tower,Rebar #4 (tons),32,1150,Structural,Northwest Steel,2026-01-12,2026-01-28,Delivered,36800
+Maple Ridge Office Tower,Rebar #8 (tons),18,1280,Structural,Northwest Steel,2026-01-12,2026-01-28,Delivered,23040
+Maple Ridge Office Tower,Ductwork — Galvanized (LF),2400,28,Mechanical,AirFlow Supply,2026-02-05,2026-03-01,Delivered,67200
+Maple Ridge Office Tower,HVAC Units — Rooftop,4,18500,Mechanical,Carrier Direct,2026-01-20,2026-03-15,Delivered,74000
+Maple Ridge Office Tower,Copper Wire 10 AWG (FT),15000,1.85,Electrical,Graybar Electric,2026-02-15,2026-03-05,Delivered,27750
+Maple Ridge Office Tower,Electrical Panels — 200A,6,4200,Electrical,Graybar Electric,2026-02-15,2026-03-20,In Transit,25200
+Maple Ridge Office Tower,Drywall 5/8 Type X (sheets),1800,18,Finishes,BuildPro Supply,2026-03-01,2026-04-15,Ordered,32400
+Northgate Industrial Park,Structural Steel W-Flange (tons),285,2850,Structural,Atlas Steel,2025-10-15,2025-12-10,Delivered,812250
+Northgate Industrial Park,Structural Steel HSS (tons),48,3100,Structural,Atlas Steel,2025-10-15,2025-12-10,Delivered,148800
+Northgate Industrial Park,High-Strength Bolts (cases),120,340,Structural,Fastenal,2025-11-01,2025-11-20,Delivered,40800
+Northgate Industrial Park,Steel Pipe 6-inch (LF),3200,42,Mechanical,PipeCo Industrial,2026-02-01,2026-03-15,Delivered,134400
+Northgate Industrial Park,Gate Valves 6-inch,24,1850,Mechanical,PipeCo Industrial,2026-02-01,2026-03-15,Delivered,44400
+Northgate Industrial Park,Fire Suppression Heads — ESFR,180,285,Mechanical,FireGuard Supply,2026-02-20,2026-04-10,Backordered,51300
+Northgate Industrial Park,Switchgear 480V,2,42000,Electrical,Eaton Distributor,2025-12-01,2026-03-01,Delivered,84000
+Northgate Industrial Park,Panel Boards 208V,8,6800,Electrical,Eaton Distributor,2025-12-01,2026-03-01,Delivered,54400
+Northgate Industrial Park,CMU Block 8-inch (pallets),95,580,Finishes,Mason Supply Co,2026-03-01,2026-05-15,Ordered,55100
+City Centre Parking Structure,PT Cables (LF),28000,4.2,Structural,Post-Tension Inc,2025-12-01,2026-01-15,Delivered,117600
+City Centre Parking Structure,Ready-Mix Concrete (CY),620,178,Structural,Metro Concrete,2026-01-05,2026-01-20,Delivered,110360
+City Centre Parking Structure,PT Anchors,560,82,Structural,Post-Tension Inc,2025-12-01,2026-01-15,Delivered,45920
+City Centre Parking Structure,Ventilation Fans — Garage,8,3200,Mechanical,AirFlow Supply,2026-03-01,2026-04-20,Ordered,25600
+City Centre Parking Structure,LED Fixtures — Garage,240,145,Electrical,Graybar Electric,2026-03-01,2026-04-15,Ordered,34800
+City Centre Parking Structure,Waterproofing Membrane (SF),18000,3.8,Finishes,Tremco Supply,2026-03-10,2026-05-01,Ordered,68400
+City Centre Parking Structure,Traffic Paint — Striping (gal),85,62,Finishes,Sherwin-Williams,2026-04-01,2026-05-20,Ordered,5270
