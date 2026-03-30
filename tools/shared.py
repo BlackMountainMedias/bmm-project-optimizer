@@ -215,18 +215,35 @@ def apply_theme():
         .risk-amount { font-size: 14px !important; }
     }
 
-    /* Mobile: make hamburger menu more visible */
+    /* Mobile: make sidebar toggle large and obvious */
     @media (max-width: 768px) {
         [data-testid="stHeader"] {
-            background: linear-gradient(135deg, #0a0f1a 0%, #111827 100%) !important;
-            border-bottom: 1px solid #1e293b !important;
+            background: #111827 !important;
+            border-bottom: 2px solid #ff6b35 !important;
+            height: 50px !important;
         }
-        /* Style the sidebar toggle button */
+        /* Make the arrow/hamburger button big and tappable */
+        [data-testid="stSidebarCollapsedControl"] {
+            top: 4px !important;
+            left: 8px !important;
+        }
+        [data-testid="stSidebarCollapsedControl"] button,
         [data-testid="stHeader"] button {
-            color: #ff6b35 !important;
-            border: 1px solid #ff6b35 !important;
-            border-radius: 6px !important;
-            margin: 6px !important;
+            background: #ff6b35 !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 8px !important;
+            width: 44px !important;
+            height: 44px !important;
+            min-height: 44px !important;
+            padding: 0 !important;
+        }
+        [data-testid="stSidebarCollapsedControl"] button svg,
+        [data-testid="stHeader"] button svg {
+            fill: white !important;
+            stroke: white !important;
+            width: 24px !important;
+            height: 24px !important;
         }
     }
 

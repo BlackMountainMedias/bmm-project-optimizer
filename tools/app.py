@@ -30,50 +30,6 @@ if os.path.exists(LOGO_PATH):
     st.sidebar.image(LOGO_PATH, width=180)
     st.sidebar.markdown("")
 
-# ---------------------------------------------------------------------------
-# Mobile: inject JS to open sidebar on button click
-# ---------------------------------------------------------------------------
-st.markdown("""
-<style>
-    #bmm-menu-btn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 999999;
-        background: #ff6b35;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 56px;
-        height: 56px;
-        font-size: 24px;
-        cursor: pointer;
-        box-shadow: 0 4px 16px rgba(255,107,53,0.4);
-        -webkit-tap-highlight-color: transparent;
-        touch-action: manipulation;
-    }
-    @media (max-width: 768px) {
-        #bmm-menu-btn { display: block; }
-    }
-</style>
-<script>
-function bmmOpenSidebar() {
-    // Try all known Streamlit sidebar toggle selectors
-    var selectors = [
-        '[data-testid="stSidebarCollapsedControl"] button',
-        '[data-testid="collapsedControl"] button',
-        'button[kind="headerNoPadding"]',
-        '[data-testid="stHeader"] button'
-    ];
-    for (var i = 0; i < selectors.length; i++) {
-        var el = parent.document.querySelector(selectors[i]);
-        if (el) { el.click(); return; }
-    }
-}
-</script>
-<div id="bmm-menu-btn" ontouchstart="bmmOpenSidebar()" onclick="bmmOpenSidebar()">&#9776;</div>
-""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
 # Run the selected page
