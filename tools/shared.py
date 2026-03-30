@@ -145,8 +145,11 @@ def apply_theme():
         border-bottom: 1px solid #1e293b;
     }
 
-    /* Sidebar logo */
-    [data-testid="stSidebar"] img { filter: invert(1) brightness(2); }
+    /* Sidebar logo - no filter, use mix-blend-mode for dark bg */
+    [data-testid="stSidebar"] img {
+        filter: invert(1) brightness(2);
+        background: transparent !important;
+    }
 
     /* Mobile responsiveness */
     @media (max-width: 768px) {
