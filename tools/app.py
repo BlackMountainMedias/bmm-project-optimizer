@@ -6,7 +6,8 @@ from shared import apply_theme, LOGO_PATH
 # ---------------------------------------------------------------------------
 # Page config
 # ---------------------------------------------------------------------------
-st.set_page_config(page_title="BMM Project Optimizer", layout="wide", page_icon="^")
+st.set_page_config(page_title="BMM Project Optimizer", layout="wide",
+                   page_icon="^", initial_sidebar_state="expanded")
 apply_theme()
 
 
