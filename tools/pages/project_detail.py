@@ -150,7 +150,7 @@ def render():
             xaxis=dict(gridcolor="#1e293b", tickfont=dict(color="#64748b"), tickformat="$,.0s"),
             yaxis=dict(tickfont=dict(color="#cbd5e1", size=13)),
         )
-        st.plotly_chart(fig_ph, use_container_width=True)
+        st.plotly_chart(fig_ph, use_container_width=True, config={"displayModeBar": False})
         st.dataframe(
             ph.style.format({
                 "Budget": "${:,.0f}", "Actual": "${:,.0f}",
@@ -175,7 +175,7 @@ def render():
             xaxis=dict(gridcolor="#1e293b", tickfont=dict(color="#64748b"), tickformat="$,.0s"),
             yaxis=dict(tickfont=dict(color="#cbd5e1", size=13)),
         )
-        st.plotly_chart(fig_cat, use_container_width=True)
+        st.plotly_chart(fig_cat, use_container_width=True, config={"displayModeBar": False})
         st.dataframe(
             cat.style.format({
                 "Budget": "${:,.0f}", "Actual": "${:,.0f}",
