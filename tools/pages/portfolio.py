@@ -25,6 +25,7 @@ def render():
     """, unsafe_allow_html=True)
 
     if is_demo_mode():
+        demo_callout("☰", "Tap the arrow icon in the top left corner to open the sidebar and navigate between pages.", "#3b82f6")
         demo_callout("👋", "Live demo with sample data. You're looking at 3 projects -- one is healthy, one looks healthy but is hiding overruns behind change orders, and one is clearly bleeding. Can you spot which is which?")
 
     psummary = portfolio_summary(df)
