@@ -1,7 +1,7 @@
 """Portfolio Overview page."""
 import streamlit as st
 import plotly.graph_objects as go
-from shared import RAG_COLORS, RAG_GLOW, get_rag_func, load_data
+from shared import RAG_COLORS, RAG_GLOW, get_rag_func, load_data, demo_callout, is_demo_mode
 from calculations import portfolio_summary, top_risks, project_health_score, data_quality_score
 
 
@@ -23,6 +23,9 @@ def render():
         </p>
     </div>
     """, unsafe_allow_html=True)
+
+    if is_demo_mode():
+        demo_callout("👋", "Live demo with sample data. You're looking at 3 projects -- one is healthy, one looks healthy but is hiding overruns behind change orders, and one is clearly bleeding. Can you spot which is which?")
 
     psummary = portfolio_summary(df)
 

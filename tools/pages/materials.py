@@ -1,7 +1,7 @@
 """Material Delivery Risk page."""
 import streamlit as st
 import pandas as pd
-from shared import MAT_RISK_COLORS, load_data
+from shared import MAT_RISK_COLORS, load_data, demo_callout, is_demo_mode
 from calculations import material_risk_summary
 
 
@@ -17,6 +17,9 @@ def render():
         </p>
     </div>
     """, unsafe_allow_html=True)
+
+    if is_demo_mode():
+        demo_callout("📦", "Backordered materials idle your crews and burn money. Northgate's fire suppression heads are backordered -- that's a crew sitting on site waiting, costing you every day.")
 
     if materials_df is None or materials_df.empty:
         st.info("No material data available. Upload material orders or use demo data.")

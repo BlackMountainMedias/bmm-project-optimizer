@@ -1,13 +1,14 @@
 project_name,co_number,description,cost_impact,phase,status,schedule_impact_days,date_submitted,date_approved
-Maple Ridge Office Tower,CO-001,Additional foundation piling due to unexpected rock,68000,Structural,Approved,5,2026-01-15,2026-01-22
-Maple Ridge Office Tower,CO-002,Owner-requested lobby finish upgrade,45000,Finishes,Approved,0,2026-02-03,2026-02-10
-Maple Ridge Office Tower,CO-003,HVAC reroute around structural conflict,22000,Mechanical,Approved,3,2026-02-18,2026-02-25
-Maple Ridge Office Tower,CO-004,Electrical panel relocation per inspector,12000,Electrical,Pending,2,2026-03-10,
-Northgate Industrial Park,CO-001,Soil remediation — contamination discovered,185000,Sitework,Approved,12,2026-01-08,2026-01-20
-Northgate Industrial Park,CO-002,Owner added mezzanine level,320000,Structural,Approved,18,2026-01-25,2026-02-05
-Northgate Industrial Park,CO-003,Fire suppression upgrade to ESFR heads,42000,Mechanical,Approved,0,2026-02-14,2026-02-20
-Northgate Industrial Park,CO-004,Additional exterior lighting per code review,28000,Electrical,Pending,0,2026-03-05,
-City Centre Parking Structure,CO-001,Rock removal — harder substrate than geotech report,52000,Sitework,Approved,7,2026-01-12,2026-01-19
-City Centre Parking Structure,CO-002,Owner-requested EV charging rough-in (Level 2),38000,Electrical,Approved,4,2026-02-01,2026-02-08
-City Centre Parking Structure,CO-003,Waterproofing spec change — upgraded membrane,18000,Finishes,Approved,0,2026-02-22,2026-02-28
-City Centre Parking Structure,CO-004,Additional stairwell per fire marshal review,95000,Structural,Pending,10,2026-03-08,
+Maple Ridge Office Tower,CO-001,Additional foundation piling — unexpected rock at grid lines D-F,72000,Structural,Approved,5,2025-12-10,2025-12-18
+Maple Ridge Office Tower,CO-002,HVAC reroute — ductwork conflict with structural beam at Level 2,48000,Mechanical,Approved,4,2026-01-15,2026-01-22
+Maple Ridge Office Tower,CO-003,Owner-requested lobby finish upgrade — marble tile and accent wall,65000,Finishes,Approved,0,2026-02-03,2026-02-10
+Maple Ridge Office Tower,CO-004,Plumbing riser relocation — field conflict with elevator shaft,42000,Mechanical,Approved,3,2026-02-18,2026-02-25
+Maple Ridge Office Tower,CO-005,Electrical panel relocation per inspector comment,14000,Electrical,Pending,2,2026-03-10,
+Northgate Industrial Park,CO-001,Soil remediation — petroleum contamination discovered at 8-foot depth,195000,Sitework,Approved,14,2025-11-05,2025-11-18
+Northgate Industrial Park,CO-002,Owner-added mezzanine level in warehouse Bay C,345000,Structural,Approved,20,2025-12-12,2025-12-28
+Northgate Industrial Park,CO-003,Fire suppression upgrade to ESFR heads — insurance requirement,48000,Mechanical,Approved,0,2026-01-20,2026-01-28
+Northgate Industrial Park,CO-004,Additional exterior lighting per updated code review,32000,Electrical,Pending,0,2026-03-05,
+Northgate Industrial Park,CO-005,Crane demobilization delay — weather standby charges,28000,Structural,Pending,5,2026-03-15,
+City Centre Parking Structure,CO-001,Rock removal — harder substrate than geotech report indicated,35000,Sitework,Approved,5,2025-12-08,2025-12-15
+City Centre Parking Structure,CO-002,Owner-requested EV charging rough-in — 12 Level 2 stations,28000,Electrical,Approved,3,2026-01-20,2026-01-28
+City Centre Parking Structure,CO-003,Waterproofing spec upgrade — premium membrane per engineer,12000,Finishes,Pending,0,2026-02-22,

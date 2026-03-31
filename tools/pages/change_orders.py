@@ -1,7 +1,7 @@
 """Change Order Analysis page."""
 import streamlit as st
 import plotly.graph_objects as go
-from shared import load_data
+from shared import load_data, demo_callout, is_demo_mode
 from calculations import change_order_summary, portfolio_summary
 
 
@@ -18,6 +18,9 @@ def render():
         </p>
     </div>
     """, unsafe_allow_html=True)
+
+    if is_demo_mode():
+        demo_callout("🔍", "This is where the real story hides. Maple Ridge Office Tower looks like a small overrun -- but strip out the approved change orders and the TRUE overrun is much worse. This is what spreadsheets miss.")
 
     if co_df is None or co_df.empty:
         st.info("No change order data available. Upload change orders or use demo data.")

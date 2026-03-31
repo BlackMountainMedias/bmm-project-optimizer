@@ -1,6 +1,6 @@
 """Schedule Intelligence page."""
 import streamlit as st
-from shared import SCHED_COLORS, load_data
+from shared import SCHED_COLORS, load_data, demo_callout, is_demo_mode
 from calculations import schedule_alerts
 
 
@@ -16,6 +16,9 @@ def render():
         </p>
     </div>
     """, unsafe_allow_html=True)
+
+    if is_demo_mode():
+        demo_callout("📅", "Schedule delays cause cost overruns. Northgate Industrial Park's steel erection finished 3 weeks late -- everything downstream is now delayed. This is how a schedule slip turns into a six-figure problem.")
 
     if schedule_df is None or schedule_df.empty:
         st.info("No schedule data available. Upload a project schedule or use demo data.")

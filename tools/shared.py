@@ -230,6 +230,23 @@ def apply_theme():
 """, unsafe_allow_html=True)
 
 
+def demo_callout(icon, text, color="#ff6b35"):
+    """Show a guided insight banner for demo mode."""
+    st.markdown(f"""
+    <div style="background: linear-gradient(135deg, {color}15 0%, {color}08 100%);
+                border-left: 3px solid {color}; border-radius: 8px;
+                padding: 12px 16px; margin-bottom: 16px;">
+        <span style="font-size: 16px; margin-right: 8px;">{icon}</span>
+        <span style="color: #e2e8f0; font-size: 13px;">{text}</span>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+def is_demo_mode():
+    """Check if dashboard is running on demo/sample data."""
+    return not st.session_state.get("use_uploaded_for_dashboard", False)
+
+
 def load_data():
     """Load and cache all data. Returns dict with all dataframes and thresholds."""
     if "app_data" in st.session_state:

@@ -1,23 +1,24 @@
 project_name,task_name,phase,planned_start,planned_end,actual_start,actual_end,pct_complete
-Maple Ridge Office Tower,Excavation & Grading,Sitework,2025-11-01,2025-12-15,2025-11-01,2025-12-12,100
-Maple Ridge Office Tower,Foundation Forming,Structural,2025-12-16,2026-02-01,2025-12-20,2026-02-15,100
-Maple Ridge Office Tower,Concrete Pour — Foundation,Structural,2026-02-02,2026-02-20,2026-02-16,2026-03-05,100
-Maple Ridge Office Tower,Concrete Pour — Levels 1-3,Structural,2026-02-21,2026-04-15,2026-03-06,,55
-Maple Ridge Office Tower,HVAC Rough-In,Mechanical,2026-03-15,2026-05-01,2026-03-20,,30
-Maple Ridge Office Tower,Electrical Rough-In,Electrical,2026-03-15,2026-05-01,2026-03-22,,25
+Maple Ridge Office Tower,Excavation & Grading,Sitework,2025-11-01,2025-12-15,2025-11-01,2025-12-18,100
+Maple Ridge Office Tower,Foundation Forming,Structural,2025-12-16,2026-02-01,2025-12-22,2026-02-12,100
+Maple Ridge Office Tower,Concrete Pour - Foundation,Structural,2026-02-02,2026-02-20,2026-02-14,2026-03-04,100
+Maple Ridge Office Tower,Concrete Pour - Levels 1-3,Structural,2026-02-21,2026-04-15,2026-03-06,,50
+Maple Ridge Office Tower,HVAC Rough-In,Mechanical,2026-03-15,2026-05-01,2026-03-22,,25
+Maple Ridge Office Tower,Plumbing Rough-In,Mechanical,2026-03-15,2026-05-01,2026-03-25,,20
+Maple Ridge Office Tower,Electrical Rough-In,Electrical,2026-03-15,2026-05-01,2026-03-24,,22
 Maple Ridge Office Tower,Drywall & Paint,Finishes,2026-05-01,2026-06-15,,,0
 Maple Ridge Office Tower,Flooring Install,Finishes,2026-06-01,2026-07-01,,,0
-Northgate Industrial Park,Site Clearing & Grading,Sitework,2025-10-01,2025-11-30,2025-10-01,2025-12-10,100
-Northgate Industrial Park,Steel Erection,Structural,2025-12-01,2026-02-28,2025-12-15,2026-03-18,100
-Northgate Industrial Park,Welding & Connections,Structural,2026-01-15,2026-03-15,2026-01-28,,80
-Northgate Industrial Park,Process Piping,Mechanical,2026-03-01,2026-05-15,2026-03-20,,20
+Northgate Industrial Park,Site Clearing & Grading,Sitework,2025-10-01,2025-11-30,2025-10-01,2025-12-14,100
+Northgate Industrial Park,Steel Erection,Structural,2025-12-01,2026-02-15,2025-12-18,2026-03-22,100
+Northgate Industrial Park,Welding & Connections,Structural,2026-01-15,2026-03-15,2026-01-30,2026-03-28,100
+Northgate Industrial Park,Process Piping,Mechanical,2026-03-01,2026-05-15,2026-03-25,,15
 Northgate Industrial Park,Fire Suppression,Mechanical,2026-04-01,2026-05-30,,,0
-Northgate Industrial Park,Power Distribution,Electrical,2026-03-15,2026-06-01,2026-03-25,,15
+Northgate Industrial Park,Power Distribution,Electrical,2026-03-15,2026-06-01,2026-04-02,,10
 Northgate Industrial Park,Interior Build-Out,Finishes,2026-06-01,2026-07-30,,,0
 Northgate Industrial Park,Painting & Coatings,Finishes,2026-07-01,2026-08-15,,,0
-City Centre Parking Structure,Demolition & Excavation,Sitework,2025-11-15,2026-01-10,2025-11-15,2026-01-20,100
-City Centre Parking Structure,Post-Tension Deck Forming,Structural,2026-01-11,2026-03-20,2026-01-25,,70
-City Centre Parking Structure,Concrete Pour — Decks,Structural,2026-02-15,2026-04-30,2026-03-01,,40
+City Centre Parking Structure,Demolition & Excavation,Sitework,2025-11-15,2026-01-10,2025-11-15,2026-01-14,100
+City Centre Parking Structure,Post-Tension Deck Forming,Structural,2026-01-11,2026-03-20,2026-01-18,,72
+City Centre Parking Structure,Concrete Pour - Decks,Structural,2026-02-15,2026-04-30,2026-02-22,,42
 City Centre Parking Structure,Ventilation Install,Mechanical,2026-04-01,2026-05-01,,,0
 City Centre Parking Structure,Lighting & Power,Electrical,2026-04-01,2026-05-15,,,0
 City Centre Parking Structure,Waterproofing Membrane,Finishes,2026-05-01,2026-05-30,,,0

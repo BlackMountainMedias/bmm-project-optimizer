@@ -1,47 +1,47 @@
 project_name,phase,cost_category,line_item,budgeted_amount
-Maple Ridge Office Tower,Sitework,Labor,Excavation & Grading,185000
-Maple Ridge Office Tower,Sitework,Materials,Gravel & Fill,92000
-Maple Ridge Office Tower,Sitework,Equipment,Excavator Rental,78000
-Maple Ridge Office Tower,Structural,Labor,Concrete Forming - Foundation,320000
-Maple Ridge Office Tower,Structural,Labor,Concrete Forming - Levels 1-3,480000
-Maple Ridge Office Tower,Structural,Materials,Rebar & Mesh,210000
-Maple Ridge Office Tower,Structural,Materials,Ready-Mix Concrete,295000
-Maple Ridge Office Tower,Structural,Subcontractor,Crane Service,145000
-Maple Ridge Office Tower,Mechanical,Labor,HVAC Rough-In,310000
-Maple Ridge Office Tower,Mechanical,Materials,Ductwork & Fittings,175000
-Maple Ridge Office Tower,Mechanical,Subcontractor,Plumbing,260000
-Maple Ridge Office Tower,Electrical,Labor,Electrical Rough-In,285000
-Maple Ridge Office Tower,Electrical,Materials,Wire & Conduit,165000
-Maple Ridge Office Tower,Finishes,Labor,Drywall & Paint,340000
-Maple Ridge Office Tower,Finishes,Materials,Drywall & Finishing Materials,195000
-Maple Ridge Office Tower,Finishes,Subcontractor,Flooring Install,165000
+Maple Ridge Office Tower,Sitework,Labor,Excavation & Grading,225000
+Maple Ridge Office Tower,Sitework,Materials,Gravel & Fill,112000
+Maple Ridge Office Tower,Sitework,Equipment,Excavator Rental,95000
+Maple Ridge Office Tower,Structural,Labor,Concrete Forming - Foundation,385000
+Maple Ridge Office Tower,Structural,Labor,Concrete Forming - Levels 1-3,575000
+Maple Ridge Office Tower,Structural,Materials,Rebar & Mesh,260000
+Maple Ridge Office Tower,Structural,Materials,Ready-Mix Concrete,365000
+Maple Ridge Office Tower,Structural,Subcontractor,Crane Service,175000
+Maple Ridge Office Tower,Mechanical,Labor,HVAC Rough-In,380000
+Maple Ridge Office Tower,Mechanical,Materials,Ductwork & Fittings,210000
+Maple Ridge Office Tower,Mechanical,Subcontractor,Plumbing,315000
+Maple Ridge Office Tower,Electrical,Labor,Electrical Rough-In,340000
+Maple Ridge Office Tower,Electrical,Materials,Wire & Conduit,195000
+Maple Ridge Office Tower,Finishes,Labor,Drywall & Paint,405000
+Maple Ridge Office Tower,Finishes,Materials,Drywall & Finishing Materials,240000
+Maple Ridge Office Tower,Finishes,Subcontractor,Flooring Install,198000
 Northgate Industrial Park,Sitework,Labor,Site Clearing & Grading,310000
-Northgate Industrial Park,Sitework,Materials,Base & Sub-Base,145000
-Northgate Industrial Park,Sitework,Equipment,Dozer & Loader Rental,120000
-Northgate Industrial Park,Structural,Labor,Steel Erection,890000
-Northgate Industrial Park,Structural,Materials,Structural Steel,1250000
-Northgate Industrial Park,Structural,Subcontractor,Welding & Connections,340000
-Northgate Industrial Park,Structural,Equipment,Crane Rental,285000
-Northgate Industrial Park,Mechanical,Labor,Process Piping,620000
-Northgate Industrial Park,Mechanical,Materials,Pipe & Valves,480000
-Northgate Industrial Park,Mechanical,Subcontractor,Fire Suppression,310000
-Northgate Industrial Park,Electrical,Labor,Power Distribution,540000
-Northgate Industrial Park,Electrical,Materials,Switchgear & Panels,385000
-Northgate Industrial Park,Electrical,Subcontractor,Low Voltage / Controls,290000
-Northgate Industrial Park,Finishes,Labor,Interior Build-Out,420000
-Northgate Industrial Park,Finishes,Materials,CMU & Metal Panel,380000
-Northgate Industrial Park,Finishes,Subcontractor,Painting & Coatings,255000
-City Centre Parking Structure,Sitework,Labor,Demolition & Excavation,125000
-City Centre Parking Structure,Sitework,Materials,Shoring & Retention,88000
-City Centre Parking Structure,Sitework,Equipment,Mini Excavator Rental,42000
-City Centre Parking Structure,Structural,Labor,Post-Tension Deck Forming,380000
-City Centre Parking Structure,Structural,Materials,PT Cables & Anchors,290000
-City Centre Parking Structure,Structural,Materials,Ready-Mix Concrete,185000
-City Centre Parking Structure,Structural,Subcontractor,Crane & Hoist Service,95000
-City Centre Parking Structure,Mechanical,Labor,Ventilation Install,85000
-City Centre Parking Structure,Mechanical,Materials,Fans & Ductwork,62000
-City Centre Parking Structure,Electrical,Labor,Lighting & Power,110000
-City Centre Parking Structure,Electrical,Materials,Fixtures & Cable,78000
-City Centre Parking Structure,Finishes,Labor,Striping & Signage,35000
-City Centre Parking Structure,Finishes,Materials,Paint & Sealant,45000
-City Centre Parking Structure,Finishes,Subcontractor,Waterproofing Membrane,95000
+Northgate Industrial Park,Sitework,Materials,Base & Sub-Base,148000
+Northgate Industrial Park,Sitework,Equipment,Dozer & Loader Rental,122000
+Northgate Industrial Park,Structural,Labor,Steel Erection,920000
+Northgate Industrial Park,Structural,Materials,Structural Steel,1280000
+Northgate Industrial Park,Structural,Subcontractor,Welding & Connections,348000
+Northgate Industrial Park,Structural,Equipment,Crane Rental,290000
+Northgate Industrial Park,Mechanical,Labor,Process Piping,640000
+Northgate Industrial Park,Mechanical,Materials,Pipe & Valves,488000
+Northgate Industrial Park,Mechanical,Subcontractor,Fire Suppression,318000
+Northgate Industrial Park,Electrical,Labor,Power Distribution,548000
+Northgate Industrial Park,Electrical,Materials,Switchgear & Panels,392000
+Northgate Industrial Park,Electrical,Subcontractor,Low Voltage / Controls,295000
+Northgate Industrial Park,Finishes,Labor,Interior Build-Out,430000
+Northgate Industrial Park,Finishes,Materials,CMU & Metal Panel,388000
+Northgate Industrial Park,Finishes,Subcontractor,Painting & Coatings,258000
+City Centre Parking Structure,Sitework,Labor,Demolition & Excavation,138000
+City Centre Parking Structure,Sitework,Materials,Shoring & Retention,96000
+City Centre Parking Structure,Sitework,Equipment,Mini Excavator Rental,44000
+City Centre Parking Structure,Structural,Labor,Post-Tension Deck Forming,408000
+City Centre Parking Structure,Structural,Materials,PT Cables & Anchors,305000
+City Centre Parking Structure,Structural,Materials,Ready-Mix Concrete,198000
+City Centre Parking Structure,Structural,Subcontractor,Crane & Hoist Service,104000
+City Centre Parking Structure,Mechanical,Labor,Ventilation Install,92000
+City Centre Parking Structure,Mechanical,Materials,Fans & Ductwork,67000
+City Centre Parking Structure,Electrical,Labor,Lighting & Power,118000
+City Centre Parking Structure,Electrical,Materials,Fixtures & Cable,84000
+City Centre Parking Structure,Finishes,Labor,Striping & Signage,38000
+City Centre Parking Structure,Finishes,Materials,Paint & Sealant,48000
+City Centre Parking Structure,Finishes,Subcontractor,Waterproofing Membrane,100000

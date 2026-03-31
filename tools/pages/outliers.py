@@ -1,7 +1,7 @@
 """Outlier Alerts page."""
 import streamlit as st
 import pandas as pd
-from shared import SEVERITY_COLORS, get_rag_func, load_data
+from shared import SEVERITY_COLORS, get_rag_func, load_data, demo_callout, is_demo_mode
 from calculations import run_outlier_detection
 
 
@@ -19,6 +19,9 @@ def render():
         </p>
     </div>
     """, unsafe_allow_html=True)
+
+    if is_demo_mode():
+        demo_callout("⚡", "The outlier engine uses three statistical methods (IQR, Z-score, peer comparison) to catch cost anomalies humans miss. Look at Northgate Industrial Park -- steel erection and process piping are flagged as critical outliers.")
 
     flags_df, outlier_stats, outlier_by_proj, outlier_by_cat = run_outlier_detection(df)
 

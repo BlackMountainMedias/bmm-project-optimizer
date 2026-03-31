@@ -1,7 +1,7 @@
 """Labor Productivity page."""
 import streamlit as st
 import plotly.graph_objects as go
-from shared import load_data
+from shared import load_data, demo_callout, is_demo_mode
 from calculations import labor_productivity
 
 
@@ -17,6 +17,9 @@ def render():
         </p>
     </div>
     """, unsafe_allow_html=True)
+
+    if is_demo_mode():
+        demo_callout("👷", "Look at Northgate Industrial Park's overtime. Steel Crew A is averaging 10+ hour days with heavy OT -- that's a sign of rework or scheduling problems that are silently eating margin.")
 
     if timecards_df is None or timecards_df.empty:
         st.info("No timecard data available. Upload timecards or use demo data.")
