@@ -133,34 +133,23 @@ def render():
     if "ai_messages" not in st.session_state:
         st.session_state["ai_messages"] = []
 
-    # Suggested prompts for empty state
+    # Examples note for empty state
     if not st.session_state["ai_messages"]:
         st.markdown("""
-        <div style="background: #111827; border: 1px solid #1e293b; border-radius: 12px;
-                    padding: 24px; margin-bottom: 24px;">
-            <div style="color: #94a3b8; font-size: 13px; margin-bottom: 16px;">
-                Try asking something like:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <div style="background: linear-gradient(135deg, #ff6b3515 0%, #ff6b3508 100%);
+                    border-left: 3px solid #ff6b35; border-radius: 8px;
+                    padding: 14px 18px; margin-bottom: 20px;">
+            <span style="color: #e2e8f0; font-size: 13px; font-weight: 600;">Examples of what you can ask:</span>
+            <span style="color: #94a3b8; font-size: 12px; display: block; margin-top: 6px; line-height: 1.8;">
+                "Which project has the highest budget variance?" &nbsp;|&nbsp;
+                "What are the biggest change orders?" &nbsp;|&nbsp;
+                "Any schedule delays I should worry about?" &nbsp;|&nbsp;
+                "How does our labor cost compare to budget?" &nbsp;|&nbsp;
+                "Show me overtime trends across all projects" &nbsp;|&nbsp;
+                "What's the industry standard OT percentage for commercial construction?"
+            </span>
+        </div>
         """, unsafe_allow_html=True)
-
-        suggestions = [
-            "Which project has the highest budget variance?",
-            "Show me overtime trends across all projects",
-            "What are the biggest change orders?",
-            "How does our labor cost compare to budget?",
-            "Any schedule delays I should worry about?",
-            "What's the industry standard OT percentage for commercial construction?",
-        ]
-
-        cols = st.columns(2)
-        for i, suggestion in enumerate(suggestions):
-            with cols[i % 2]:
-                if st.button(suggestion, key=f"suggest_{i}", use_container_width=True):
-                    st.session_state["ai_messages"].append({"role": "user", "content": suggestion})
-                    st.rerun()
-
-        st.markdown("</div></div>", unsafe_allow_html=True)
 
     # Render chat history
     for msg in st.session_state["ai_messages"]:
