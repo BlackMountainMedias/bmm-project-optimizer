@@ -153,25 +153,8 @@ def render():
 
     # Render chat history
     for msg in st.session_state["ai_messages"]:
-        if msg["role"] == "user":
-            st.markdown(f"""
-            <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
-                <div style="background: #1e3a5f; border: 1px solid #2563eb; border-radius: 12px 12px 2px 12px;
-                            padding: 12px 16px; max-width: 75%; color: #e2e8f0; font-size: 14px;">
-                    {msg['content']}
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
-        else:
-            st.markdown(f"""
-            <div style="display: flex; justify-content: flex-start; margin-bottom: 12px;">
-                <div style="background: #111827; border: 1px solid #1e293b; border-radius: 12px 12px 12px 2px;
-                            padding: 12px 16px; max-width: 85%; color: #cbd5e1; font-size: 14px;
-                            line-height: 1.6;">
-                    {msg['content']}
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
 
     # Chat input
     user_input = st.chat_input("Ask about your projects, budgets, labor, schedules...")
