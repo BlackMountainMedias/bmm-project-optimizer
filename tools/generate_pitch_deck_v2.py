@@ -78,7 +78,7 @@ class Deck(FPDF):
         self.logo(MX, 6, h=28)
         self.set_font("Helvetica", "B", 18)
         self.set_text_color(*NAVY)
-        self.text(MX + 32, 18, "Black Mountain Media")
+        self.text(MX + 32, 18, "Black Mountain Technologies")
 
         # Product category — THE title of the deck
         self.set_font("Helvetica", "B", 38)

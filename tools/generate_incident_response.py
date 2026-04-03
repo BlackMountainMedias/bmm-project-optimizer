@@ -49,7 +49,7 @@ class IncidentResponsePolicy(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -106,7 +106,7 @@ class IncidentResponsePolicy(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 50)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 58)
         self.cell(PW, 6, "Construction Project Optimization Platform", align="C",
@@ -127,7 +127,7 @@ class IncidentResponsePolicy(FPDF):
         # --- Section 1: Purpose ---
         self.section(1, "PURPOSE")
         self.body(
-            "This policy defines Black Mountain Media Inc.'s (\"BMM\") process for "
+            "This policy defines Black Mountain Technologies Inc.'s (\"BMM\") process for "
             "identifying, responding to, and recovering from security incidents and "
             "data breaches affecting the BMM Analytics Construction Project "
             "Optimization Suite (the \"Platform\").")
@@ -171,7 +171,7 @@ class IncidentResponsePolicy(FPDF):
         self.sub_clause("a",
             "Automated monitoring systems alert on suspicious activity.")
         self.sub_clause("b",
-            "User-reported incidents received via michael@blackmountainmedias.ca.")
+            "User-reported incidents received via michael@blackmountaintechnologies.ca.")
         self.sub_clause("c",
             "Incident logged with timestamp, description, and initial severity "
             "classification.")
@@ -302,12 +302,12 @@ class IncidentResponsePolicy(FPDF):
         self.set_font("Helvetica", "B", 10)
         self.set_text_color(*DARK_TEXT)
         self.set_x(MX + 8)
-        self.cell(CW - 8, 5, "Black Mountain Media Inc.",
+        self.cell(CW - 8, 5, "Black Mountain Technologies Inc.",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_font("Helvetica", "", 10)
         fields = [
             "British Columbia, Canada",
-            "Email: michael@blackmountainmedias.ca",
+            "Email: michael@blackmountaintechnologies.ca",
         ]
         for f in fields:
             self.set_x(MX + 8)

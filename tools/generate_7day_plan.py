@@ -49,7 +49,7 @@ class Plan(FPDF):
         self.set_y(-12)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*DIM)
-        self.cell(0, 5, f"Confidential  |  Black Mountain Media  |  Page {self.page_no()}",
+        self.cell(0, 5, f"Confidential  |  Black Mountain Technologies  |  Page {self.page_no()}",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def dark_page(self):
@@ -148,7 +148,7 @@ class Plan(FPDF):
 
         self.set_font("Helvetica", "", 10)
         self.set_text_color(*DIM)
-        self.text(MX, 185, "Black Mountain Media Inc.  |  March 2026  |  Confidential")
+        self.text(MX, 185, "Black Mountain Technologies Inc.  |  March 2026  |  Confidential")
 
         self._is_cover = False
 

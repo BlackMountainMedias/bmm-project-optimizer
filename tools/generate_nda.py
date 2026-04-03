@@ -49,7 +49,7 @@ class NDA(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -138,7 +138,7 @@ class NDA(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 44)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 52)
         self.cell(PW, 6, "Construction Project Optimization Platform", align="C",
@@ -158,7 +158,7 @@ class NDA(FPDF):
         self.set_x(MX)
         self.cell(CW, 6, "PARTIES TO THIS AGREEMENT", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.ln(3)
-        self.party_box("Disclosing Party / Party A", "Black Mountain Media Inc.")
+        self.party_box("Disclosing Party / Party A", "Black Mountain Technologies Inc.")
         self.ln(4)
         self.party_box("Receiving Party / Party B")
 
@@ -168,7 +168,7 @@ class NDA(FPDF):
             "the Effective Date written above, by and between the Disclosing Party and "
             "the Receiving Party (collectively, the \"Parties\"), for the purpose of "
             "protecting confidential and proprietary information disclosed in connection "
-            "with the evaluation, demonstration, or use of Black Mountain Media's "
+            "with the evaluation, demonstration, or use of Black Mountain Technologies' "
             "construction project optimization software platform and related services.")
 
         self._is_cover = False
@@ -376,7 +376,7 @@ class NDA(FPDF):
             "Effective Date first written above.")
         self.ln(4)
 
-        self.sig_block("DISCLOSING PARTY / PARTY A", "Black Mountain Media Inc.")
+        self.sig_block("DISCLOSING PARTY / PARTY A", "Black Mountain Technologies Inc.")
         self.ln(6)
         self.sig_block("RECEIVING PARTY / PARTY B")
 

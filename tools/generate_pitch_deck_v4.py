@@ -485,7 +485,7 @@ class Deck(FPDF):
             size=14, color=SUB)
         cy += 14
         self.sub_text(cy,
-            "michael@blackmountainmedias.ca",
+            "michael@blackmountaintechnologies.ca",
             size=13, color=TEAL)
 
     # ==================================================================

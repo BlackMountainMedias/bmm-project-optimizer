@@ -91,7 +91,7 @@ def _call_claude(messages, data_context, web_search=False):
 
     system_prompt = (
         "You are BMM AI Assistant -- a construction project intelligence bot "
-        "powered by Black Mountain Media. You have deep knowledge of construction "
+        "powered by Black Mountain Technologies. You have deep knowledge of construction "
         "project management, budgeting, scheduling, labor productivity, and "
         "materials procurement.\n\n"
         "You have access to the company's current project data below. Use it to "

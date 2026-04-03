@@ -51,7 +51,7 @@ class License(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def article(self, num, title):
@@ -200,7 +200,7 @@ class License(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 50)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 58)
         self.cell(PW, 6, "Construction Project Optimization Platform", align="C",
@@ -218,7 +218,7 @@ class License(FPDF):
         self.set_x(MX)
         self.cell(CW, 6, "PARTIES TO THIS AGREEMENT", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.ln(3)
-        self.party_box("Licensor", "Black Mountain Media Inc.")
+        self.party_box("Licensor", "Black Mountain Technologies Inc.")
         self.ln(4)
         self.party_box("Licensee")
 
@@ -227,7 +227,7 @@ class License(FPDF):
             "This Software License and Intellectual Property Protection Agreement "
             "(\"Agreement\") is entered into as of the Effective Date written above, by "
             "and between the Licensor and the Licensee (collectively, the \"Parties\"), "
-            "for the licensing and use of Black Mountain Media's construction project "
+            "for the licensing and use of Black Mountain Technologies' construction project "
             "optimization software platform and related services, subject to the terms "
             "and conditions set forth herein.")
 
@@ -547,7 +547,7 @@ class License(FPDF):
             "Intellectual Property Protection Agreement as of the Effective Date first "
             "written above.")
         self.ln(2)
-        self.sig_block("LICENSOR", "Black Mountain Media Inc.")
+        self.sig_block("LICENSOR", "Black Mountain Technologies Inc.")
         self.ln(6)
         self.sig_block("LICENSEE")
 

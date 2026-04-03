@@ -51,7 +51,7 @@ class DPA(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def article(self, num, title):
@@ -157,7 +157,7 @@ class DPA(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 50)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 58)
         self.cell(PW, 6, "Construction Project Optimization Platform", align="C",
@@ -184,7 +184,7 @@ class DPA(FPDF):
         self.ln(3)
         self.party_box("Data Controller (Licensee)")
         self.ln(4)
-        self.party_box("Data Processor (Licensor)", "Black Mountain Media Inc.")
+        self.party_box("Data Processor (Licensor)", "Black Mountain Technologies Inc.")
 
         self.ln(6)
         self.body(
@@ -225,7 +225,7 @@ class DPA(FPDF):
             ("1.3", "\"Data Controller\" or \"Controller\" means the Licensee, being "
              "the Party that determines the purposes and means of the Processing of "
              "Personal Data."),
-            ("1.4", "\"Data Processor\" or \"Processor\" means Black Mountain Media "
+            ("1.4", "\"Data Processor\" or \"Processor\" means Black Mountain Technologies "
              "Inc. (the Licensor), being the Party that processes Personal Data on "
              "behalf of the Controller."),
             ("1.5", "\"Sub-processor\" means any third party engaged by the Processor "
@@ -511,7 +511,7 @@ class DPA(FPDF):
         self.ln(2)
         self.sig_block("DATA CONTROLLER (LICENSEE)")
         self.ln(6)
-        self.sig_block("DATA PROCESSOR (LICENSOR)", "Black Mountain Media Inc.")
+        self.sig_block("DATA PROCESSOR (LICENSOR)", "Black Mountain Technologies Inc.")
 
         # --- EXHIBIT: TECHNICAL AND ORGANIZATIONAL MEASURES ---
         self.add_page()

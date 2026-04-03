@@ -49,7 +49,7 @@ class PrivacyPolicy(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -102,7 +102,7 @@ class PrivacyPolicy(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 44)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 52)
         self.cell(PW, 6, "Construction Project Optimization Platform", align="C",
@@ -123,7 +123,7 @@ class PrivacyPolicy(FPDF):
         # --- Section 1: Introduction ---
         self.section(1, "Introduction")
         self.body(
-            "Black Mountain Media Inc. (\"BMM,\" \"we,\" \"us,\" or \"our\") is a "
+            "Black Mountain Technologies Inc. (\"BMM,\" \"we,\" \"us,\" or \"our\") is a "
             "technology company based in British Columbia, Canada. We operate the BMM "
             "Analytics Construction Project Optimization Suite (the \"Platform\"), a "
             "software-as-a-service platform that helps construction companies analyze "
@@ -360,12 +360,12 @@ class PrivacyPolicy(FPDF):
         self.set_font("Helvetica", "B", 10)
         self.set_text_color(*DARK_TEXT)
         self.set_x(MX + 8)
-        self.cell(CW - 8, 5, "Black Mountain Media Inc.",
+        self.cell(CW - 8, 5, "Black Mountain Technologies Inc.",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_font("Helvetica", "", 10)
         fields = [
             "British Columbia, Canada",
-            "Email: michael@blackmountainmedias.ca",
+            "Email: michael@blackmountaintechnologies.ca",
         ]
         for f in fields:
             self.set_x(MX + 8)

@@ -49,7 +49,7 @@ class AcceptableUsePolicy(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -102,7 +102,7 @@ class AcceptableUsePolicy(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 44)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 52)
         self.cell(PW, 6, "BMM Analytics Construction Project Optimization Suite",
@@ -125,7 +125,7 @@ class AcceptableUsePolicy(FPDF):
         self.body(
             "This Acceptable Use Policy (\"AUP\") defines acceptable and prohibited "
             "uses of the BMM Analytics Construction Project Optimization Suite "
-            "(the \"Platform\") operated by Black Mountain Media Inc. (\"BMM\"), "
+            "(the \"Platform\") operated by Black Mountain Technologies Inc. (\"BMM\"), "
             "a company based in British Columbia, Canada.")
         self.body(
             "This policy applies to all users of the Platform, including employees, "
@@ -215,7 +215,7 @@ class AcceptableUsePolicy(FPDF):
         self.bullet("Log out after each session on shared devices.")
         self.bullet(
             "Report any suspected security incidents to "
-            "michael@blackmountainmedias.ca immediately.")
+            "michael@blackmountaintechnologies.ca immediately.")
 
         # --- Section 6: Enforcement ---
         self.section(6, "ENFORCEMENT")
@@ -229,7 +229,7 @@ class AcceptableUsePolicy(FPDF):
             "BMM may suspend access immediately without notice for severe "
             "violations (security threats, data breaches, illegal activity).")
         self.body(
-            "Appeals may be directed to michael@blackmountainmedias.ca.")
+            "Appeals may be directed to michael@blackmountaintechnologies.ca.")
 
         # --- Section 7: Changes to This Policy ---
         self.section(7, "CHANGES TO THIS POLICY")
@@ -250,9 +250,9 @@ class AcceptableUsePolicy(FPDF):
         self.ln(1)
         self.set_font("Helvetica", "", 10)
         fields = [
-            "Black Mountain Media Inc.",
+            "Black Mountain Technologies Inc.",
             "British Columbia, Canada",
-            "Email: michael@blackmountainmedias.ca",
+            "Email: michael@blackmountaintechnologies.ca",
         ]
         for f in fields:
             self.set_x(MX + 8)

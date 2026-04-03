@@ -49,7 +49,7 @@ class TermsOfService(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -102,7 +102,7 @@ class TermsOfService(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 44)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 52)
         self.cell(PW, 6, "BMM Analytics Construction Project Optimization Suite", align="C",
@@ -203,7 +203,7 @@ class TermsOfService(FPDF):
         self.section(5, "INTELLECTUAL PROPERTY")
         self.bullet(
             "The platform, including all software, algorithms, designs, and "
-            "content, is the property of Black Mountain Media Inc.")
+            "content, is the property of Black Mountain Technologies Inc.")
         self.bullet(
             "Nothing in these Terms grants you ownership of any BMM "
             "intellectual property.")
@@ -304,12 +304,12 @@ class TermsOfService(FPDF):
         # --- Section 12: Contact ---
         self.section(12, "CONTACT")
         self.body(
-            "Questions about these Terms: michael@blackmountainmedias.ca")
+            "Questions about these Terms: michael@blackmountaintechnologies.ca")
         self.ln(2)
         self.set_font("Helvetica", "B", 10)
         self.set_text_color(*DARK_TEXT)
         self.set_x(MX + 8)
-        self.cell(CW - 8, 5, "Black Mountain Media Inc.",
+        self.cell(CW - 8, 5, "Black Mountain Technologies Inc.",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_font("Helvetica", "", 10)
         self.set_x(MX + 8)

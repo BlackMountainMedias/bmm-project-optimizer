@@ -78,7 +78,7 @@ class ProofDeck(FPDF):
     def footer(self):
         self.set_font("Helvetica", "", 8)
         self.set_text_color(*DIM)
-        self.text(MX, PH - 8, "Black Mountain Media  |  Simulation Analysis  |  2026")
+        self.text(MX, PH - 8, "Black Mountain Technologies  |  Simulation Analysis  |  2026")
         self.text(PW - MX - 4, PH - 8, str(self.page_no()))
 
     # =================================================================

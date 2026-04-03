@@ -48,7 +48,7 @@ class Deck(FPDF):
     def footer(self):
         self.set_font("Helvetica", "", 9)
         self.set_text_color(74, 82, 112)
-        self.text(MX, PH - 10, "Black Mountain Media  |  Confidential  |  2026")
+        self.text(MX, PH - 10, "Black Mountain Technologies  |  Confidential  |  2026")
 
     # =================================================================
     # SLIDE 1 -- PROBLEM RECOGNITION
@@ -60,7 +60,7 @@ class Deck(FPDF):
         # 1. Company + product name -- top, subtle
         self.set_font("Helvetica", "", 12)
         self.set_text_color(178, 188, 204)
-        self.text(MX, 20, "Black Mountain Media  --  Construction Margin Intelligence")
+        self.text(MX, 20, "Black Mountain Technologies  --  Construction Margin Intelligence")
 
         # 2. Primary headline
         self.set_font("Helvetica", "B", 36)

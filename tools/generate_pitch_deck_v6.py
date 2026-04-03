@@ -61,7 +61,7 @@ class Deck(FPDF):
         self.text(MX + 50, 14, "BMM Project Optimizer")
         self.set_font("Helvetica", "", 9)
         self.set_text_color(*SUB)
-        self.text(MX + 50, 19, "Construction Project Intelligence  |  Black Mountain Media Inc.")
+        self.text(MX + 50, 19, "Construction Project Intelligence  |  Black Mountain Technologies Inc.")
 
         self.set_fill_color(*ACCENT)
         self.rect(MX, 23, CW, 1, "F")
@@ -214,7 +214,7 @@ class Deck(FPDF):
         # Footer
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*DIM)
-        self.text(MX, PH - 6, "Confidential  |  Black Mountain Media Inc.  |  michael@blackmountainmedias.ca")
+        self.text(MX, PH - 6, "Confidential  |  Black Mountain Technologies Inc.  |  michael@blackmountaintechnologies.ca")
         self.text(PW - 22, PH - 6, "Page 1 of 2")
 
         # ============================================================
@@ -404,7 +404,7 @@ class Deck(FPDF):
         self.set_font("Helvetica", "", 9)
         self.set_text_color(*TEAL)
         self.text(MX + 95, PH - 7,
-                  "michael@blackmountainmedias.ca")
+                  "michael@blackmountaintechnologies.ca")
         self.set_text_color(*SUB)
         self.text(MX + 160, PH - 7,
                   "3 pilot slots open this quarter  |  2% guarantee or full refund")

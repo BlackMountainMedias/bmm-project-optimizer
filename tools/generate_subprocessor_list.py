@@ -48,7 +48,7 @@ class SubprocessorList(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -95,7 +95,7 @@ class SubprocessorList(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 46)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 54)
         self.cell(PW, 6, "Construction Project Optimization Platform", align="C",
@@ -113,10 +113,10 @@ class SubprocessorList(FPDF):
         self.cell(CW, 6, "Last Updated: March 2026",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(MX, 103)
-        self.cell(CW, 6, "Contact: michael@blackmountainmedias.ca",
+        self.cell(CW, 6, "Contact: michael@blackmountaintechnologies.ca",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(MX, 111)
-        self.cell(CW, 6, "Black Mountain Media Inc., British Columbia, Canada",
+        self.cell(CW, 6, "Black Mountain Technologies Inc., British Columbia, Canada",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def content_pages(self):
@@ -127,7 +127,7 @@ class SubprocessorList(FPDF):
         self.section(1, "PURPOSE")
         self.bullet(
             "This document lists all third-party subprocessors engaged by "
-            "Black Mountain Media Inc. to process customer data in connection "
+            "Black Mountain Technologies Inc. to process customer data in connection "
             "with the BMM Analytics Construction Project Optimization Suite."
         )
         self.bullet(
@@ -276,14 +276,14 @@ class SubprocessorList(FPDF):
         self.section(6, "CONTACT")
         self.bullet(
             "For questions about subprocessors: "
-            "michael@blackmountainmedias.ca"
+            "michael@blackmountaintechnologies.ca"
         )
         self.bullet(
             "To request notification of subprocessor changes: "
-            "michael@blackmountainmedias.ca"
+            "michael@blackmountaintechnologies.ca"
         )
         self.bullet(
-            "Black Mountain Media Inc., British Columbia, Canada"
+            "Black Mountain Technologies Inc., British Columbia, Canada"
         )
 
 

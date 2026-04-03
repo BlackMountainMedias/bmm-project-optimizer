@@ -48,7 +48,7 @@ class SLA(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -209,7 +209,7 @@ class SLA(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 44)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 52)
         self.cell(PW, 6, "BMM Analytics Construction Project Optimization Suite",
@@ -228,7 +228,7 @@ class SLA(FPDF):
         self.body(
             "This Service Level Agreement (\"SLA\") is an exhibit and schedule to "
             "the Software License & IP Protection Agreement (the \"Agreement\") "
-            "between Black Mountain Media Inc. (\"BMM\") and the Licensee. This SLA "
+            "between Black Mountain Technologies Inc. (\"BMM\") and the Licensee. This SLA "
             "defines the service commitments, support standards, and remedies for "
             "the BMM Analytics Construction Project Optimization Suite (the "
             "\"Platform\"). Capitalized terms not defined herein have the meanings "
@@ -460,7 +460,7 @@ class SLA(FPDF):
             "Agreement as an exhibit to the Software License & IP Protection "
             "Agreement as of the Effective Date first written above.")
         self.ln(4)
-        self.sig_block("BMM -- BLACK MOUNTAIN MEDIA INC.", "Black Mountain Media Inc.")
+        self.sig_block("BMM -- BLACK MOUNTAIN MEDIA INC.", "Black Mountain Technologies Inc.")
         self.ln(6)
         self.sig_block("LICENSEE")
 

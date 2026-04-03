@@ -49,7 +49,7 @@ class SecurityQuestionnaire(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 7)
         self.set_text_color(*GRAY)
-        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Media",
+        self.cell(0, 5, f"Page {self.page_no()}  |  Confidential  |  Black Mountain Technologies",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def section(self, num, title):
@@ -94,13 +94,13 @@ class SecurityQuestionnaire(FPDF):
 
         self.set_font("Helvetica", "", 11)
         self.set_xy(0, 44)
-        self.cell(PW, 6, "Black Mountain Media Inc.", align="C",
+        self.cell(PW, 6, "Black Mountain Technologies Inc.", align="C",
                   new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 52)
         self.cell(PW, 6, "BMM Analytics Construction Project Optimization Suite",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.set_xy(0, 60)
-        self.cell(PW, 6, "michael@blackmountainmedias.ca",
+        self.cell(PW, 6, "michael@blackmountaintechnologies.ca",
                   align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
         # Last updated line
@@ -119,7 +119,7 @@ class SecurityQuestionnaire(FPDF):
         self.section(1, "Company Information")
 
         self.qa("Company legal name?",
-                "Black Mountain Media Inc.")
+                "Black Mountain Technologies Inc.")
 
         self.qa("Company location?",
                 "British Columbia, Canada.")
