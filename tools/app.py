@@ -24,11 +24,8 @@ pages = st.navigation([
 ])
 
 # ---------------------------------------------------------------------------
-# Sidebar — logo (nav is handled natively above)
+# Sidebar
 # ---------------------------------------------------------------------------
-if os.path.exists(LOGO_PATH):
-    st.sidebar.image(LOGO_PATH, width=180)
-    st.sidebar.markdown("")
 
 
 # ---------------------------------------------------------------------------
