@@ -308,41 +308,45 @@ class Deck(FPDF):
             ("PILOT", "$5,000", [
                 "1 project  |  60 days",
                 "Full dashboard + analytics",
-                "Outlier detection + health score",
                 "Email support",
-                "2% guarantee or full refund",
+                "2% guarantee",
             ]),
             ("GROWTH", "$30,000", [
                 "Up to 3 projects  |  6 months",
                 "Everything in Pilot",
                 "AI Assistant included",
-                "Labor + material analytics",
                 "Phone + email support",
-                "2% guarantee or full refund",
+                "2% guarantee",
             ]),
             ("ENTERPRISE", "$125,000", [
-                "Unlimited projects  |  12 months",
+                "Unlimited  |  12 months",
                 "Everything in Growth",
-                "Priority support + custom onboarding",
-                "Split payment: $62,500 now, $62,500 at 6 months",
-                "2% guarantee or full refund",
-                "18-month non-compete -- we protect your edge",
+                "Priority support",
+                "Custom onboarding",
+                "2% guarantee",
+            ]),
+            ("STRATEGIC", "$500,000", [
+                "Unlimited  |  24 months",
+                "Everything in Enterprise",
+                "Dedicated account manager",
+                "On-site onboarding",
+                "Quarterly business reviews",
             ]),
         ]
 
-        tier_w = (CW - 8) / 3
+        tier_w = (CW - 12) / 4
         tx = MX
         for i, (name, price, features) in enumerate(tiers):
-            if i == 2:
+            if i == 3:
                 self.set_fill_color(*ACCENT)
                 self.rect(tx - 1, cy, tier_w + 2, 68, "F")
             self.card(tx, cy + 1, tier_w, 66)
 
-            self.set_font("Helvetica", "B", 10)
-            self.set_text_color(*ACCENT if i < 2 else WHITE)
+            self.set_font("Helvetica", "B", 8)
+            self.set_text_color(*ACCENT if i < 3 else WHITE)
             self.text(tx + 4, cy + 8, name)
 
-            self.set_font("Helvetica", "B", 18)
+            self.set_font("Helvetica", "B", 14)
             self.set_text_color(*WHITE)
             self.text(tx + 4, cy + 18, price)
 

@@ -370,63 +370,67 @@ class Deck(FPDF):
 
         tiers = [
             ("PILOT", "$5,000", "1 project", "60 days",
-             ["Full dashboard", "Budget + schedule analysis",
+             ["Full dashboard", "Budget + schedule",
               "Outlier detection", "Email support",
               "2% guarantee"]),
             ("GROWTH", "$30,000", "3 projects", "6 months",
              ["Everything in Pilot", "AI Assistant",
-              "Labor + material analytics", "Phone + email support",
+              "Labor + materials", "Phone + email",
               "2% guarantee"]),
             ("ENTERPRISE", "$125,000", "Unlimited", "12 months",
-             ["Everything in Growth", "Unlimited projects",
-              "Priority support", "Custom onboarding",
-              "2% guarantee", "Split payment option"]),
+             ["Everything in Growth", "Priority support",
+              "Custom onboarding", "Split payment",
+              "2% guarantee"]),
+            ("STRATEGIC", "$500,000", "Unlimited", "24 months",
+             ["Everything in Enterprise", "Dedicated acct mgr",
+              "On-site onboarding", "Quarterly reviews",
+              "Priority features"]),
         ]
 
-        card_w = 68
-        gap = (CW - card_w * 3) / 2
+        card_w = 52
+        gap = (CW - card_w * 4) / 3
         x = MX
 
         for i, (name, price, projects, term, features) in enumerate(tiers):
             cy_top = 52
             h = 145
 
-            # Highlight enterprise
-            if i == 2:
+            # Highlight strategic partner
+            if i == 3:
                 self.set_fill_color(*ACCENT)
                 self.rect(x - 1, cy_top - 1, card_w + 2, h + 2, "F")
 
             self.card(x, cy_top, card_w, h)
 
             # Tier name
-            self.set_font("Helvetica", "B", 12)
-            self.set_text_color(*ACCENT if i < 2 else WHITE)
-            self.text(x + 8, cy_top + 12, name)
+            self.set_font("Helvetica", "B", 10)
+            self.set_text_color(*ACCENT if i < 3 else WHITE)
+            self.text(x + 6, cy_top + 12, name)
 
             # Price
-            self.set_font("Helvetica", "B", 24)
+            self.set_font("Helvetica", "B", 18)
             self.set_text_color(*WHITE)
-            self.text(x + 8, cy_top + 28, price)
+            self.text(x + 6, cy_top + 28, price)
 
             # Scope
-            self.set_font("Helvetica", "", 10)
+            self.set_font("Helvetica", "", 8)
             self.set_text_color(*SUB)
-            self.text(x + 8, cy_top + 36, f"{projects}  |  {term}")
+            self.text(x + 6, cy_top + 36, f"{projects}  |  {term}")
 
             # Divider
             self.set_draw_color(*DIM)
             self.set_line_width(0.2)
-            self.line(x + 8, cy_top + 42, x + card_w - 8, cy_top + 42)
+            self.line(x + 6, cy_top + 42, x + card_w - 6, cy_top + 42)
 
             # Features
             fy = cy_top + 50
             for feat in features:
-                self.set_font("Helvetica", "", 9)
+                self.set_font("Helvetica", "", 7)
                 self.set_text_color(*TEAL)
-                self.text(x + 8, fy, ">")
+                self.text(x + 6, fy, ">")
                 self.set_text_color(*BODY)
-                self.text(x + 14, fy, feat)
-                fy += 10
+                self.text(x + 11, fy, feat)
+                fy += 9
 
             x += card_w + gap
 

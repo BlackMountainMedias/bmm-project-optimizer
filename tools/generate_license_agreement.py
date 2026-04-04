@@ -136,15 +136,15 @@ class License(FPDF):
         self.ln(1)
 
     def tier_table(self):
-        """Draw the 3-tier comparison table."""
-        col_w = CW / 4
+        """Draw the 4-tier comparison table."""
+        col_w = CW / 5
         row_h = 8
 
         # Header row
         self.set_fill_color(*DARK)
-        self.set_font("Helvetica", "B", 9)
+        self.set_font("Helvetica", "B", 8)
         self.set_text_color(*WHITE)
-        headers = ["", "Pilot", "Growth", "Enterprise"]
+        headers = ["", "Pilot", "Growth", "Enterprise", "Strategic Partner"]
         self.set_x(MX)
         for h in headers:
             self.cell(col_w, row_h, h, border=1, fill=True, align="C",
@@ -153,27 +153,28 @@ class License(FPDF):
 
         # Data rows
         rows = [
-            ("License Fee", "CAD $5,000", "CAD $30,000", "CAD $125,000"),
-            ("Projects", "1 project", "Up to 3 projects", "Unlimited"),
-            ("Term", "60 days", "6 months", "12 months"),
-            ("Performance Guarantee", "2% in 60 days", "2% in 60 days", "2% in 60 days"),
-            ("AI Assistant", "No", "Yes", "Yes"),
-            ("Dedicated Support", "Email only", "Email + calls", "Priority support"),
-            ("Data Export", "Yes", "Yes", "Yes"),
+            ("License Fee", "CAD $5,000", "CAD $30,000", "CAD $125,000", "CAD $500,000"),
+            ("Projects", "1 project", "Up to 3", "Unlimited", "Unlimited"),
+            ("Term", "60 days", "6 months", "12 months", "24 months"),
+            ("Guarantee", "2% in 60 days", "2% in 60 days", "2% in 60 days", "2% in 60 days"),
+            ("AI Assistant", "No", "Yes", "Yes", "Yes"),
+            ("Support", "Email", "Email + calls", "Priority", "Dedicated account mgr"),
+            ("Onboarding", "Self-serve", "Guided", "Custom", "On-site + custom"),
+            ("QBRs", "No", "No", "No", "Quarterly reviews"),
         ]
 
-        for i, (label, c1, c2, c3) in enumerate(rows):
+        for i, (label, c1, c2, c3, c4) in enumerate(rows):
             if i % 2 == 0:
                 self.set_fill_color(*LIGHT_BG)
             else:
                 self.set_fill_color(*WHITE)
-            self.set_font("Helvetica", "B", 9)
+            self.set_font("Helvetica", "B", 8)
             self.set_text_color(*DARK_TEXT)
             self.set_x(MX)
             self.cell(col_w, row_h, label, border=1, fill=True,
                       new_x=XPos.RIGHT, new_y=YPos.TOP)
-            self.set_font("Helvetica", "", 9)
-            for val in (c1, c2, c3):
+            self.set_font("Helvetica", "", 8)
+            for val in (c1, c2, c3, c4):
                 self.cell(col_w, row_h, val, border=1, fill=True, align="C",
                           new_x=XPos.RIGHT, new_y=YPos.TOP)
             self.ln(row_h)
@@ -359,6 +360,14 @@ class License(FPDF):
             "due at the six (6) month milestone. Under Option B, if the Performance "
             "Guarantee in Article VI is not met, Licensee receives a full refund of the "
             "initial payment.")
+        self.checkbox_line(
+            "STRATEGIC PARTNER -- CAD $500,000. Unlimited projects. Twenty-four (24) month "
+            "term. Full platform access including AI Assistant, dedicated account manager, "
+            "on-site onboarding and training, custom reporting and dashboards, quarterly "
+            "business reviews, and priority feature requests. Two payment options: "
+            "(A) Full payment of CAD $500,000 within thirty (30) days, OR "
+            "(B) CAD $250,000 due within thirty (30) days, with the remaining CAD $250,000 "
+            "due at the twelve (12) month milestone.")
         self.ln(1)
         self.clause("5.2",
             "Late Payment. Any amount not paid when due shall accrue interest at a rate "
@@ -415,7 +424,8 @@ class License(FPDF):
         self.clause("8.1",
             "This Agreement shall commence on the Effective Date and continue for the "
             "License Term specified by the selected License Tier (60 days for Pilot, "
-            "6 months for Growth, 12 months for Enterprise), unless earlier terminated.")
+            "6 months for Growth, 12 months for Enterprise, 24 months for Strategic "
+            "Partner), unless earlier terminated.")
         self.clause("8.2",
             "Termination for Cause. Either Party may terminate this Agreement if the "
             "other Party materially breaches any provision and fails to cure such breach "
@@ -522,7 +532,7 @@ class License(FPDF):
             "Primary Contact Email: ____________________________________",
             "Primary Contact Phone: ____________________________________",
             "Number of Authorized Users: _______________________________",
-            "License Tier Selected:  [ ] Pilot   [ ] Growth   [ ] Enterprise",
+            "License Tier:  [ ] Pilot  [ ] Growth  [ ] Enterprise  [ ] Strategic Partner",
             "License Term Start Date: __________________________________",
             "License Term End Date: ____________________________________",
         ]
@@ -533,7 +543,7 @@ class License(FPDF):
             self.cell(CW - 4, 8, f, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
         self.ln(4)
-        self.body("For Enterprise Tier only -- select payment option:")
+        self.body("For Enterprise or Strategic Partner Tier -- select payment option:")
         self.set_x(MX + 4)
         self.set_font("Helvetica", "", 10)
         self.cell(CW - 4, 8,
